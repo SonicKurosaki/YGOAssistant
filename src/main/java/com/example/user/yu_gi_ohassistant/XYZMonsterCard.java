@@ -12,7 +12,7 @@ public class XYZMonsterCard extends MonsterCard
 {
     String material;
     int rank;
-    public XYZMonsterCard(String name, String text, String effect, Image image, String attribute, int level, String type, int attack, int defense, String material, int rank)
+    public XYZMonsterCard(String name, String text, String effect, Image image, String cardtype, String attribute, int level, String type, int attack, int defense, String material, int rank)
     {
         this.name = name;
         this.text = text;
@@ -24,6 +24,7 @@ public class XYZMonsterCard extends MonsterCard
         this.attack = attack;
         this.defense = defense;
         this.material = material;
+        this.cardtype = cardtype;
         this.rank = rank;
     }
     public void setMaterial(String material)

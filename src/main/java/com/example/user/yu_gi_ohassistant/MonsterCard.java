@@ -21,7 +21,7 @@ public class MonsterCard extends Card
         this.attack = 0;
         this.defense = 0;
     }
-    public MonsterCard(String name, String text, String effect, Image image, String attribute, int level, String type, int attack, int defense)
+    public MonsterCard(String name, String text, String effect, Image image, String cardtype, String attribute, int level, String type, int attack, int defense)
     {
         this.name = name;
         this.text = text;
@@ -32,6 +32,7 @@ public class MonsterCard extends Card
         this.level = level;
         this.attack = attack;
         this.defense = defense;
+        this.cardtype = cardtype;
     }
 
     public int getAttack()

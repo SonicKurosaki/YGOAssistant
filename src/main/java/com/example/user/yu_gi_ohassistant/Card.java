@@ -12,16 +12,36 @@ public class Card extends Object
     String effect;
     Image image;
 
+    public String getCardType() {
+        return cardtype;
+    }
+
+    public void setCardType(String cardtype) {
+        this.cardtype = cardtype;
+    }
+
+    String cardtype;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    int id;
     public Card()
     {
     }
 
-    public Card(String name, String text, String effect, Image image)
+    public Card(String name, String text, String effect, Image image, String cardtype, int id)
     {
         this.name = name;
         this.text = text;
         this.effect = effect;
         this.image = image;
+        this.cardtype = cardtype;
+        this.id = id;
     }
 
     public String getText()

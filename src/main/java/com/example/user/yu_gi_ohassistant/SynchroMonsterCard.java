@@ -9,7 +9,7 @@ import java.util.List;
 public class SynchroMonsterCard extends MonsterCard
 {
     String material;
-    public SynchroMonsterCard(String name, String text, String effect, Image image, String attribute, int level, String type, int attack, int defense, String material)
+    public SynchroMonsterCard(String name, String text, String effect, Image image, String cardtype, String attribute, int level, String type, int attack, int defense, String material)
     {
         this.name = name;
         this.text = text;
@@ -21,6 +21,7 @@ public class SynchroMonsterCard extends MonsterCard
         this.attack = attack;
         this.defense = defense;
         this.material = material;
+        this.cardtype = cardtype;
     }
     public void setMaterial(String material)
     {

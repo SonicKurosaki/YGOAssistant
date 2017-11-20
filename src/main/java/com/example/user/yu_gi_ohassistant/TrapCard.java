@@ -9,13 +9,14 @@ import android.media.Image;
 public class TrapCard extends Card
 {
     String type;
-    public TrapCard(String name, String text, String effect, Image image, String type)
+    public TrapCard(String name, String text, String effect, Image image, String cardtype, String type)
     {
         this.name = name;
         this.text = text;
         this.effect = effect;
         this.image = image;
         this.type = type;
+        this.cardtype = cardtype;
     }
     public void setType(String type) {
         this.type = type;

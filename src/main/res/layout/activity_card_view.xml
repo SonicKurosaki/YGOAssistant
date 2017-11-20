@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:srcCompat="@drawable/bewd"
-        app:layout_constraintRight_toLeftOf="@+id/TextView10"
+        app:layout_constraintRight_toLeftOf="@+id/attack"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
@@ -19,7 +19,7 @@
         android:layout_marginTop="70dp"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="70dp"
-        app:layout_constraintLeft_toLeftOf="@+id/TextView8"
+        app:layout_constraintLeft_toLeftOf="@+id/pack"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="1.0" />
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Back"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/TextView3"
+        app:layout_constraintBottom_toTopOf="@+id/card_name"
         android:layout_marginStart="16dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -49,123 +49,123 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/TextView3"
+        android:id="@+id/card_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="9"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="Blue-Eyes White Dragon"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/TextView4"
+        app:layout_constraintRight_toRightOf="@+id/attribute"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <TextView
-        android:id="@+id/TextView4"
+        android:id="@+id/attribute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="3"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="LIGHT"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/TextView6"
+        app:layout_constraintBottom_toTopOf="@+id/type"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="16dp"
         app:layout_constraintLeft_toRightOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/TextView5"
+        android:id="@+id/level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="4"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="LEVEL 8"
         android:layout_marginStart="3dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TextView4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/attribute"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/TextView4" />
+        app:layout_constraintLeft_toRightOf="@+id/attribute" />
 
     <TextView
-        android:id="@+id/TextView6"
+        android:id="@+id/type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="4"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="DRAGON"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/TextView4"
+        app:layout_constraintRight_toRightOf="@+id/attribute"
         android:layout_marginTop="120dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintLeft_toRightOf="@+id/TextView4" />
+        app:layout_constraintLeft_toRightOf="@+id/attribute" />
 
     <TextView
-        android:id="@+id/TextView7"
+        android:id="@+id/effect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="4"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="NORMAL"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/TextView6"
+        app:layout_constraintRight_toRightOf="@+id/type"
         android:layout_marginTop="19dp"
-        app:layout_constraintTop_toBottomOf="@+id/TextView6"
+        app:layout_constraintTop_toBottomOf="@+id/type"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/TextView6" />
+        app:layout_constraintLeft_toLeftOf="@+id/type" />
 
     <TextView
-        android:id="@+id/TextView10"
+        android:id="@+id/attack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="4"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="ATK 3000"
-        app:layout_constraintRight_toLeftOf="@+id/TextView11"
+        app:layout_constraintRight_toLeftOf="@+id/defense"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/TextView7" />
+        app:layout_constraintTop_toBottomOf="@+id/effect" />
 
     <TextView
-        android:id="@+id/TextView11"
+        android:id="@+id/defense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="4"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="DEF 2500"
         android:layout_marginStart="300dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/TextView10"
+        app:layout_constraintBaseline_toBaselineOf="@+id/attack"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
-        android:id="@+id/TextView14"
+        android:id="@+id/text"
         android:layout_width="134dp"
         android:layout_height="185dp"
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:maxLines="8"
         android:text="This legendary dragon is a powerful engine of destruction. Virtually invincible, very few have faced this awesome creature and lived to tell the tale."
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/TextView11"
-        app:layout_constraintTop_toBottomOf="@+id/TextView11"
+        app:layout_constraintRight_toRightOf="@+id/defense"
+        app:layout_constraintTop_toBottomOf="@+id/defense"
         tools:layout_editor_absoluteY="327dp"
         tools:layout_editor_absoluteX="232dp"
         android:layout_marginRight="0dp"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/TextView8"
+        android:id="@+id/pack"
         android:layout_width="282dp"
         android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:maxLines="8"
         android:text="Legend of the Blue-Eyes White Dragon"
         android:onClick="packView"
         tools:layout_constraintBottom_creator="1"
